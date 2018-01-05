@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <!--CSS File-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Star Wars RPG</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h1>STAR WARS RPG GAME</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid gameplaySection">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <h4>Select Your Character</h4>
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="characters">
+                <!--Place the characters in here-->
+                    <span class="available-character" id="Luke-Skywalker">
+                        <p>Luke Skywalker</p>
+                        <img src="assets/images/picture1.jpeg" alt="Luke Skywalker" id="picture1" style="width:150px">
+                        <p class="health">150</p>
+                    </span>
+
+                    <span class="available-character" id="yoda">
+                        <p>Yoda</p>
+                        <img src="assets/images/picture2.jpg" alt="yoda" id="picture2" style="width:150px">
+                        <p class="health">100</p>
+                    </span>
+
+                    <span class="available-character" id="Emperor-Palpatine">
+                        <p>Emperor Palpatine</p>
+                        <img src="assets/images/picture3.jpg" alt="Emperor Palpatine" id="picture3" style="width:150px">
+                        <p class="health">120</p>
+                    </span>
+
+                    <span class="available-character" id="obi-wan-kenobi">
+                        <p>Obi-Wan Kenobi</p>
+                        <img src="assets/images/picture4.jpg" alt="Obi-Wan Kenobi" id="picture4" style="width:150px">
+                        <p class="health">180</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <h4>Enemies To Attack</h4>
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="enemyList">
+                    <!--This is where enemies will be placed-->
+                    <p>List of Enemy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <h2>BATTLEFIELD</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--this is where characters fight-->
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+            <h2>Your Character</h2>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <!--You will push your character into this div-->
+                <div id="yourCharacter">
+                <!--the character will be dynamically updated--> 
+                </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <button class="btn-danger btn-lg attackBtn text-center" id="attackBtn">Attack!</button>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-md-4 text-center"> 
+        <h2>Your Enemy</h2>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+            <!--Enemy will be dynamically updated-->
+                <div id="yourEnemy">
+
+                </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+
+        <div class="col-sm-12 col-md-8 col-lg-8 text-center">
+            <!--The text will be updated. it will provide information about fight, result, and warnings.-->
+            <div id="textUpdate">
+
+            </div>
+
+            <br>
+
+            <div id="gameOver">
+            <!--Restart buttong will be created.-->
+            </div>
+
+            <div class="col-sm-12 col-md-2 col-lg-2"></div>
+
+        </div>
+    </div>
+    <!-- Game message section -->
+    <div class="col-lg-12" id="message-section">
+        <div id="game-message"></div>
+        <button id="restart">Restart</button>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+</script>
+
+<script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
